@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, withRouter } from "react-router-dom";
+
+import DashBoard from './components/React/dashboard';
+import ToggleButton from './components/React/toggle-button';
+import SimpleCounter from './components/React/simple-counter';
+import ControlledInput from './components/React/controlled-input';
+import ControlledForm from './components/React/controlled-from';
+import CheckUserAge from './components/React/conditional-render';
+import FormikCom from './components/React/formik';
+import NavBar from './components/React/nav';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <main className="App">
+        <NavBar />
+        <Route exact path="/" component={DashBoard} />
+        <Route exact path="/dashboard" component={DashBoard} />
+        <Route exact path="/toggle-button" component={ToggleButton} />
+        <Route exact path="/simple-counter" component={SimpleCounter} />
+        <Route exact path="/form/controlled-input" component={ControlledInput} />
+        <Route exact path="/form/controlled-form" component={ControlledForm} />
+        <Route exact path="/conditional-render" component={CheckUserAge} />
+        <Route exact path="/form/formik" component={FormikCom} />
+      </main>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
