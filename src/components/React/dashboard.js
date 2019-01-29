@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavBar from './nav';
 
 const style = {
   display: 'flex',

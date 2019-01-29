@@ -9,6 +9,7 @@ import ControlledForm from './components/React/controlled-from';
 import CheckUserAge from './components/React/conditional-render';
 import FormikCom from './components/React/formik';
 import NavBar from './components/React/nav';
+import ReduxForms from './components/Redux/redux-form';
 
 class App extends Component {
   render() {
@@ -21,8 +22,8 @@ class App extends Component {
         <Route exact path="/simple-counter" component={SimpleCounter} />
         <Route exact path="/form/controlled-input" component={ControlledInput} />
         <Route exact path="/form/controlled-form" component={ControlledForm} />
+        <Route exact path="/form/redux-form" component={ReduxForms} />
         <Route exact path="/conditional-render" component={CheckUserAge} />
-        <Route exact path="/form/formik" component={FormikCom} />
       </main>
     );
   }

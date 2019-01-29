@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from './nav';
 
 class SimpleCounter extends React.Component {
   constructor(props) {

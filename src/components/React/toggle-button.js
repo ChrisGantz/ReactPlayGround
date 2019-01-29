@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from './nav';
 
 class ToggleButton extends React.Component {
   constructor(props) {

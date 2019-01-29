@@ -1,12 +1,10 @@
 import React from 'react';
 
-// import Yup from 'yup'
-
 class ReduxForms extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Survey Form</h1>
+      <div className="center-item">
+        <h1 style={{order: 0}}>Survey Form</h1>
         <div className="form-container">
             <p>Let us know how to improve! <span role="img" aria-live="polite" >👏</span></p>
           <form>
@@ -53,34 +51,39 @@ class ReduxForms extends React.Component {
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox" name="improve" value=""/>
+                    <input type="checkbox" name="improve" value="code"/>
+                    Code
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="improve" value=""/>
+                    <input type="checkbox" name="improve" value="syntax"/>
+                    Syntax
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="improve" value=""/>
+                    <input type="checkbox" name="improve" value="readibilty"/>
+                    Readibilty
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="improve" value=""/>
+                    <input type="checkbox" name="improve" value="frameworks"/>
+                    Frameworks
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="improve" value=""/>
+                    <input type="checkbox" name="improve" value="tests"/>
+                    Tests
                   </label>
                 </li>
               </ul>
             </div>
             <div>
-              <label></label>
-              <input />
+              <label for="comments">Comments or Suggestions?</label>
+              <input type="textbox" name="comments" />
             </div>
           </form>
         </div>
