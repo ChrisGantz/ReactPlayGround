@@ -12,7 +12,7 @@ class ReduxForms extends React.Component {
               <div className="label">
               <label for="name">Name:</label>
             </div>
-            <div>
+              <div className="input-wrap">
               <input type="text" name="name" placeholder="John Doe" />
             </div>
             </div>
@@ -20,7 +20,7 @@ class ReduxForms extends React.Component {
               <div className="label">
               <label for="email">Email</label>
               </div>
-              <div>
+              <div className="input-wrap">
               <input type="text" name="email" placeholder="johnDoe3@email.com" />
               </div>
             </div>
@@ -28,7 +28,7 @@ class ReduxForms extends React.Component {
               <div className="label">
               <label >Age</label>
               </div>
-              <div>
+              <div className="input-wrap">
               <input type="number" name="age" placeholder="21" />
               </div>
             </div>
@@ -36,7 +36,7 @@ class ReduxForms extends React.Component {
               <div className="label">
                 <label>What is your current role?</label>
               </div>
-              <div>
+              <div className="input-wrap">
               <select name="occupation">
                 <option value="student">Student</option>
                 <option value="full-time">Full Time Job</option>
@@ -49,7 +49,7 @@ class ReduxForms extends React.Component {
               <div className="label">
               <label for="radio">Would you recommend us?</label>
               </div>
-              <ul>
+              <ul className="left-25px">
                 <li>
                   <label for="yes">Yes</label>
                   <input type="radio" name="recommend" value="yes" />
@@ -105,7 +105,9 @@ class ReduxForms extends React.Component {
               <div className="label">
               <label for="comments">Comments or Suggestions?</label>
               </div>
+              <div className="input-wrap">
               <input type="textbox" name="comments" />
+              </div>
             </div>
           </form>
         </div>

@@ -18,6 +18,26 @@
 
 .form-divs {
   display: flex;
-  justify-content: center;
   padding: 10px 0;
+}
+
+.label {
+  width: 43%;
+  text-align: right;
+}
+select {
+  margin-left: 25px;
+  padding: 5px;
+}
+.left-25px {
+  margin-left: 25px;
+}
+
+input {
+  margin-left: 25px;
+  padding: 3px;
+}
+
+form {
+  width: 100%;
 }
