@@ -11,6 +11,7 @@ import FormikCom from './components/React/formik';
 import NavBar from './components/React/nav';
 import ReduxForms from './components/Redux/redux-form';
 import ToggleNavigation from './components/React/nav-toggle';
+import BackDrop from './components/React/backdrop';
 
 class App extends Component {
   constructor(props) {
@@ -20,8 +21,8 @@ class App extends Component {
     }
   }
   handleClick() {
-    this.setState({
-      display: !this.state.display,
+    this.setState(prevState => {
+      return {display: !prevState.state.display}
     })
   }
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
       <main style={{height: "100vh"}}>
         <ToggleNavigation display={this.state.display} handleClick={() => this.handleClick()} />
         {/* {this.state.display && <NavBar/>} */}
+        {this.state.display && <BackDrop onClick={() => this.handleClick()} />}
         <Route exact path="/" component={DashBoard} />
         <Route exact path="/dashboard" component={DashBoard} />
         <Route exact path="/toggle-button" component={ToggleButton} />
