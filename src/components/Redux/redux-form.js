@@ -7,7 +7,7 @@ class ReduxForms extends React.Component {
         <h1 style={{order: 0}}>Survey Form</h1>
         <div className="form-container">
             <p>Let us know how to improve! <span role="img" aria-live="polite" >👏</span></p>
-          <form>
+          <form className="redux-form">
             <div className="form-divs">
               <div className="label">
               <label for="name">Name:</label>

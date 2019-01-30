@@ -33,11 +33,15 @@ select {
   margin-left: 25px;
 }
 
-input {
+.input-wrap input {
   margin-left: 25px;
   padding: 3px;
 }
 
-form {
-  width: 100%;
+ul {
+  list-style: none;;
+}
+
+.redux-form {
+  width: 100%
 }

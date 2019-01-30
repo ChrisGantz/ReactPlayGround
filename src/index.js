@@ -6,6 +6,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 // CSS
 import "./css-components/main.css";
 import "./css-components/form.css";
+import "./css-components/nav-toggle.css"
 
 ReactDOM.render(
   <Router>

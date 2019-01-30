@@ -10,12 +10,25 @@ import CheckUserAge from './components/React/conditional-render';
 import FormikCom from './components/React/formik';
 import NavBar from './components/React/nav';
 import ReduxForms from './components/Redux/redux-form';
+import ToggleNavigation from './components/React/nav-toggle';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: false,
+    }
+  }
+  handleClick() {
+    this.setState({
+      display: !this.state.display,
+    })
+  }
   render() {
     return (
-      <main className="App">
-        <NavBar />
+      <main style={{height: "100vh"}}>
+        <ToggleNavigation display={this.state.display} handleClick={() => this.handleClick()} />
+        {/* {this.state.display && <NavBar/>} */}
         <Route exact path="/" component={DashBoard} />
         <Route exact path="/dashboard" component={DashBoard} />
         <Route exact path="/toggle-button" component={ToggleButton} />

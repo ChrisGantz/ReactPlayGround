@@ -1,0 +1,26 @@
+.toggle-hamburger {
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.toggle-hamburger:focus {
+  outline: none
+}
+
+.hamburger {
+  height: 2px;
+  background: white;
+  width: 24px;
+}
+
+.nav-icon {
+  margin: 20px 0 0 20px;
+}
