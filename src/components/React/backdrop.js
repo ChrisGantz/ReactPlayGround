@@ -1,9 +1,9 @@
 import React from 'react';
 import "../../css-components/backdrop.css"
 
-const BackDrop = () => {
+const BackDrop = (props) => {
   return (
-    <div className="backdrop">
+    <div className="backdrop" onClick={() => {props.handleClick()}}>
       
     </div>
   );

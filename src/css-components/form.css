@@ -1,5 +1,5 @@
 .center-item-form {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +39,7 @@ select {
 }
 
 ul {
-  list-style: none;;
+  list-style: none;
 }
 
 .redux-form {

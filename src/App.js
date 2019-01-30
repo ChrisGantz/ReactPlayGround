@@ -20,17 +20,23 @@ class App extends Component {
       display: false,
     }
   }
+  // should have called it something like handleDisplay
   handleClick() {
     this.setState(prevState => {
-      return {display: !prevState.state.display}
+      return {display: !prevState.display}
     })
   }
+  // better to make new handler for backdrop because it shouldnt be able to toggle turn false
+  handleBackDropClose = () => {
+    this.setState({display: false})
+  }
+
   render() {
     return (
       <main style={{height: "100vh"}}>
         <ToggleNavigation display={this.state.display} handleClick={() => this.handleClick()} />
-        {/* {this.state.display && <NavBar/>} */}
-        {this.state.display && <BackDrop onClick={() => this.handleClick()} />}
+        {this.state.display && <NavBar/>}
+        {this.state.display && <BackDrop handleClick={this.handleBackDropClose} />}
         <Route exact path="/" component={DashBoard} />
         <Route exact path="/dashboard" component={DashBoard} />
         <Route exact path="/toggle-button" component={ToggleButton} />

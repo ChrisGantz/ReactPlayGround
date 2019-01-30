@@ -68,7 +68,7 @@ class ReduxForms extends React.Component {
               <div className="label">
                 <label>What can we improve</label>
               </div>
-              <ul>
+              <ul className="left-25px">
                 <li>
                   <label>
                     <input type="checkbox" name="improve" value="code"/>

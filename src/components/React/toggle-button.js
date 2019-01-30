@@ -20,7 +20,7 @@ class ToggleButton extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="toggle-button">
+        <div className="center-item">
           <button onClick={() => this.toggleVisibility()}>Click Me</button>
           {this.state.visibility && <h1>Now You see me</h1>}
         </div>

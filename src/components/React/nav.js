@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <header className="navigation">
-      <div></div>
       <nav className="nav-bar">
         <span className="nav-logo" role="img" area-label="nerd emoji">🤓</span>
         <div className="nav-list">

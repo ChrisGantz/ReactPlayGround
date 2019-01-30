@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  position: fixed;
   box-shadow: none;
   padding: 0;
   margin: 0;
@@ -22,5 +23,5 @@
 }
 
 .nav-icon {
-  margin: 20px 0 0 20px;
+  padding: 20px 0 0 20px;
 }
