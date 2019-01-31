@@ -27,6 +27,7 @@ class App extends Component {
     })
   }
   // better to make new handler for backdrop because it shouldnt be able to toggle turn false
+  // this way of creating methods keeps you from using bind or arrow function in render useful for optimization
   handleBackDropClose = () => {
     this.setState({display: false})
   }

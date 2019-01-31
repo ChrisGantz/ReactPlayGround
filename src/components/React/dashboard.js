@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 
-const style = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '85%',    
-}
 class DashBoard extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1 style={style} >Pick your example!</h1>
+        <h1 className="center-item" >Pick your example!</h1>
       </React.Fragment>
     );
   }
