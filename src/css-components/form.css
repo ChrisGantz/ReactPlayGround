@@ -14,6 +14,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 690px;
+  justify-content: center;
 }
 
 .form-divs {
@@ -24,6 +26,9 @@
 .label {
   width: 43%;
   text-align: right;
+  font-size: 20px;
+  align-self: center;
+  margin: 5px;
 }
 select {
   margin-left: 25px;
@@ -35,7 +40,8 @@ select {
 
 .input-wrap input {
   margin-left: 25px;
-  padding: 3px;
+  padding: 5px;
+  font-size: 20px;
 }
 
 ul {
