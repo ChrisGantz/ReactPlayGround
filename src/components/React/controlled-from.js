@@ -23,6 +23,7 @@ export default class ControlledForm extends React.Component {
       submit: this.state.input,
       prevSubmits: [...this.state.prevSubmits, this.state.input],
       input: '',
+      disabled: true,
     })
     // change code above this line
   }
@@ -32,13 +33,10 @@ export default class ControlledForm extends React.Component {
         <li key={index}>{elem}</li>
       )
     });
-    let enableButton;
-    if(this.state.input === '') {
-      enableButton = (<button type='submit' onSubmit={this.handleSubmit} disabled >Submit!</button>);
-    } else {
-      enableButton = (<button type='submit' onSubmit={this.handleSubmit}>Submit!</button>)
+    let disable;
+    if(!this.state.input) {
+      disable = true
     }
-
     return (
       <React.Fragment>
         <div className="center-item">
@@ -46,7 +44,7 @@ export default class ControlledForm extends React.Component {
             { /* change code below this line */}
             <input type="text" value={this.state.input} onChange={this.handleChange} />
             { /* change code above this line */}
-            {enableButton}
+            <button type='submit' disabled={disable} >Submit!</button>
           </form>
           { /* change code below this line */}
           <h2>you have submitted this: {this.state.submit}</h2>
