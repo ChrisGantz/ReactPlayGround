@@ -7,11 +7,11 @@ export default class ControlledInput extends React.Component {
       input: ''
     };
     // change code below this line
-
+      // No need for bind with arrow function
     // change code above this line
   }
   // change code below this line
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({
       input: e.target.value
     })
@@ -22,7 +22,7 @@ export default class ControlledInput extends React.Component {
       <React.Fragment>
       <div className="center-item">
         { /* change code below this line */}
-        <input type="text" value={this.state.input} onChange={(e) => this.handleChange(e)} />
+        <input type="text" value={this.state.input} onChange={this.handleChange} />
         { /* change code above this line */}
         <h4>Controlled Input:</h4>
         <p>{this.state.input}</p>
