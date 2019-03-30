@@ -12,6 +12,7 @@ import NavBar from './components/React/nav';
 import ReduxForms from './components/Redux/redux-form';
 import ToggleNavigation from './components/React/nav-toggle';
 import BackDrop from './components/React/backdrop';
+import UpdateTime from './components/React/update-time';
 
 class App extends Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class App extends Component {
         <Route exact path="/form/controlled-form" component={ControlledForm} />
         <Route exact path="/form/redux-form" component={ReduxForms} />
         <Route exact path="/conditional-render" component={CheckUserAge} />
+        <Route exact path="/hooks" component={UpdateTime} />
       </main>
     );
   }

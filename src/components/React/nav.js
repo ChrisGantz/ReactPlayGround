@@ -15,6 +15,7 @@ const NavBar = () => {
             <li><Link to="/form/controlled-form" >Controlled Form</Link></li>
             <li><Link to="/form/redux-form" >Redux Form</Link></li>
             <li><Link to="/conditional-render" >Conditional Render</Link></li>
+            <li><Link to="/hooks" >Hooks</Link></li>
           </ul>
         </div>
       </nav>
